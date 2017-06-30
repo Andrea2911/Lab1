@@ -28,6 +28,8 @@ public:
     void followHash();
     void quit();
 
+private:
+    void createWelcome(string banner);
 };
 
 //class User {
@@ -48,7 +50,6 @@ public:
 
 int main() {
     Menu menu;
-    //set<User> userList2;
     menu.displayMenu();
     return 0;
 }
@@ -58,9 +59,9 @@ int main() {
 //}
 
 void Menu::displayMenu() {
-    cout << "=========================================================== " << endl
-         << "|             Welcome to War Eagle Chat System!            |" << endl
-         << "=========================================================== " << endl;
+    cout << string(10, ' ') << "=========================================================== " << endl
+         << string(10, ' ') << "|             Welcome to War Eagle Chat System!            |" << endl
+         << string(10, ' ') << "=========================================================== " << endl;
 
     string userChoice;
     char choiceChar;
@@ -75,6 +76,7 @@ void Menu::displayMenu() {
        }
        choiceChar = userChoice.at(0);
        if (userList.size() == 0 && choiceChar != 'n' && choiceChar != 'q') {
+           cout << "No users have been created." << endl << endl;
            continue;
        }
        switch (choiceChar) {
@@ -97,7 +99,14 @@ void Menu::displayMenu() {
                followHash();
                break;
            case 'c':
+               if (userList.size() == 1) {
+                   cout << "You cannot switch users, only one user has been created." << endl << endl;
+                   continue;
+               }
                switchUser();
+               break;
+           case 'q':
+               quit();
                break;
            default:
                cout << "Invalid input! Try again.";
@@ -121,9 +130,8 @@ void Menu::createUser() {
         User newUser(currentUser);
         userList.insert(newUser);
         newUser.addFriend(currentUser.getUsername());
-        cout << "=========================================================== " << endl
-             << "|        Welcome to War Eagle Chat System, " + currentUser.getUsername() + "!            |" << endl
-             << "=========================================================== " << endl;
+        string banner = "Welcome to War Eagle Chat System, " + currentUser.getUsername() + "!";
+        createWelcome(banner);
     }
 }
 
@@ -139,15 +147,16 @@ void Menu::postMessage() {
         }
         message += line + "\n";
     }
+    cout << endl;
+    cout << string(100, '=') << endl;
 }
 
 void Menu::displayWall() {
     string foundUser;
     string singleMessage;
     std::vector<string> userMessages;
-    cout << "=========================================================== " << endl
-         << "|       " + currentUser.getUsername() + "'s Wall Page        |" << endl
-         << "=========================================================== " << endl << endl;
+    string banner = currentUser.getUsername() + "' Wall Page";
+    createWelcome(banner);
     string bufferCopy = messageBuffer;
     while (bufferCopy.length() > 0) {
         unsigned long userStart = bufferCopy.find("(*") + 2;
@@ -179,15 +188,15 @@ void Menu::displayWall() {
         cout << userMessages.at(i) << endl;
         numDisplayed++;
     }
+    cout << string(100, '=') << endl;
 }
 
 void Menu::displayHome() {
     string foundUser;
     string singleMessage;
     std::vector<string> userMessages;
-    cout << "=========================================================== " << endl
-         << "|       " + currentUser.getUsername() + "'s Home Page        |" << endl
-         << "=========================================================== " << endl << endl;
+    string banner = currentUser.getUsername() + "'s Home Page";
+    createWelcome(banner);
     string bufferCopy = messageBuffer;
     string hashes = currentUser.findFollowedHashtags(hashtagBuffer, currentUser.getUsername());
     while (bufferCopy.length() > 0) {
@@ -200,6 +209,7 @@ void Menu::displayHome() {
                 messageEnd = bufferCopy.length();
             }
             singleMessage = bufferCopy.substr(userEnd + 2, messageEnd - userEnd - 2);
+            singleMessage = user + " >\n" + singleMessage;
 
             if (user == currentUser.getUsername()) {
                 userMessages.push_back(singleMessage);
@@ -234,6 +244,7 @@ void Menu::displayHome() {
         cout << userMessages.at(i) << endl;
         numDisplayed++;
     }
+    cout << string(100, '=') << endl;
 }
 
 void Menu::addFriends() {
@@ -243,6 +254,7 @@ void Menu::addFriends() {
     cout << endl;
     cin.ignore();
     currentUser.addFriend(candidateFriend);
+    cout << string(100, '=') << endl;
 }
 
 void Menu::switchUser() {
@@ -259,10 +271,8 @@ void Menu::switchUser() {
             realUser = true;
         }
     }
-    cout << "=========================================================== " << endl
-         << "|     Welcome back to War Eagle Chat System, " + currentUser.getUsername() + "!    |" << endl
-         << "=========================================================== " << endl;
-
+    string banner = "Welcome back to War Eagle Chat System, " + currentUser.getUsername() + "!";
+    createWelcome(banner);
 }
 
 void Menu::followHash() {
@@ -278,10 +288,21 @@ void Menu::followHash() {
         unsigned long hashSize = newHash.size();
         hashtagBuffer.insert(index + hashSize, " " + currentUser.getUsername());
     }
+    cout << endl<< string(100, '=') << endl;
 }
 
 void Menu::quit() {
+    cout << string(10, ' ') << string(59, '=') << endl
+         << string(10, ' ') << "|         Thank you for using War Eagle Chat System        |" << endl
+         << string(10, ' ') << string(59, '=');
+}
 
+void Menu::createWelcome(string banner) {
+    banner = "|          " + banner + "          |";
+    unsigned long bannerLength = banner.length();
+    cout << string(10, ' ') << string(bannerLength, '=') << endl
+         << string(10, ' ') << banner << endl
+         << string(10, ' ') << string(bannerLength, '=') << endl << endl;
 }
 
 //User::User(string username) {
