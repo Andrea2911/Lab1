@@ -1,6 +1,15 @@
+// Lab 1:       War Eagle Chat System
+// Name:        Andrea E. Walker
+// Class:       COMP 2710 Section 2
+// Date:        June 29, 2017
+// E-Mail:      aew0056@auburn.edu
+// User-ID:     aew0056
+// Filename:    aew0056_1.cpp
 //
-// Created by awalker on 6/27/17.
-//
+// Description: This program is a simple chat messaging system
+//              that allows users to post messages, friend other users,
+//              follow hashtags, change users, display a home page, display
+//              a wall page, and quit the application.
 #include <iostream>
 #include <string>
 #include <sstream>
@@ -47,7 +56,9 @@ private:
 //
 //
 //};
-
+// Function:    main
+// Description: The driver function for War Eagle Chat System. It
+//              instantiates a Menu object and calls displayMenu.
 int main() {
     Menu menu;
     menu.displayMenu();
@@ -58,6 +69,9 @@ int main() {
 //    currentUser = User("no");
 //}
 
+//Function:     displayMenu
+//Description:  Displays the menu for the War Eagle Chat system, giving
+//              the user eight different options for how to proceed.
 void Menu::displayMenu() {
     cout << string(10, ' ') << "=========================================================== " << endl
          << string(10, ' ') << "|             Welcome to War Eagle Chat System!            |" << endl
@@ -116,6 +130,10 @@ void Menu::displayMenu() {
     }while(choiceChar != 'q');
 }
 
+//Function:     createUser
+//Description:  Creates a new user, using the username the user enters.
+//              The user is welcomed to the chat system and is added to the
+//              list of users.
 void Menu::createUser() {
     string candidateUser;
     cout << "Please enter user name: ";
@@ -135,6 +153,10 @@ void Menu::createUser() {
     }
 }
 
+// Function:    postMessage
+//Description:  Allows a user to post a multiline message.  To end the message,
+//              the user enters "#$". The message is appended to the message buffer
+//              in the form "(*user*)message".
 void Menu::postMessage() {
     cout << "Enter message:" << endl;
     string message = "(*" + currentUser.getUsername() + "*)";
@@ -151,13 +173,20 @@ void Menu::postMessage() {
     cout << string(100, '=') << endl;
 }
 
+// Function:    displayWall
+// Description: Searches the message buffer for all of the user's own posts.
+//              Those messages are then printed to the console in reverse
+//              chronological order.  After two messages have been printed,
+//              the user is asked if they want to see more messages.  If yes,
+//              the rest of the user's messages are printed.  If no, no other
+//              messages are printed.
 void Menu::displayWall() {
-    string foundUser;
     string singleMessage;
     std::vector<string> userMessages;
-    string banner = currentUser.getUsername() + "' Wall Page";
+    string banner = currentUser.getUsername() + "'s Wall Page";
     createWelcome(banner);
     string bufferCopy = messageBuffer;
+
     while (bufferCopy.length() > 0) {
         unsigned long userStart = bufferCopy.find("(*") + 2;
         if (userStart != std::string::npos) {
@@ -167,6 +196,7 @@ void Menu::displayWall() {
             if (messageEnd == std::string::npos) {
                 messageEnd = bufferCopy.length();
             }
+
             if (user == currentUser.getUsername()) {
                 singleMessage = bufferCopy.substr(userEnd + 2, messageEnd - userEnd - 2);
                 userMessages.push_back(singleMessage);
@@ -175,6 +205,7 @@ void Menu::displayWall() {
         }
 
     }
+
     int numDisplayed = 0; //current number of messages printed
     for (unsigned long i = userMessages.size() - 1; i != std::string::npos; i--) {
         if (numDisplayed == 2) {
@@ -191,14 +222,22 @@ void Menu::displayWall() {
     cout << string(100, '=') << endl;
 }
 
+// Function:    displayHome
+// Description: Searches the message buffer for all of the user's own posts,
+//              the user's friend's posts, and any posts with hashtags the user follows.
+//              Those messages are then printed to the console in reverse
+//              chronological order.  After two messages have been printed,
+//              the user is asked if they want to see more messages.  If yes,
+//              the rest of the messages are printed.  If no, no other
+//              messages are printed.
 void Menu::displayHome() {
-    string foundUser;
     string singleMessage;
     std::vector<string> userMessages;
     string banner = currentUser.getUsername() + "'s Home Page";
     createWelcome(banner);
     string bufferCopy = messageBuffer;
     string hashes = currentUser.findFollowedHashtags(hashtagBuffer, currentUser.getUsername());
+
     while (bufferCopy.length() > 0) {
         unsigned long userStart = bufferCopy.find("(*") + 2;
         if (userStart != std::string::npos) {
@@ -231,6 +270,7 @@ void Menu::displayHome() {
         }
 
     }
+
     int numDisplayed = 0; //current number of messages printed
     for (unsigned long i = userMessages.size() - 1; i != std::string::npos; i--) {
         if (numDisplayed == 2) {
@@ -247,6 +287,11 @@ void Menu::displayHome() {
     cout << string(100, '=') << endl;
 }
 
+//Function:     addFriends
+//Description:  Prompts the user for a friend's username.  If the username
+//              is valid, a new friend is added to the current user's
+//              friend list.  If the username is invalid, the user is continually
+//              prompted until a valid username is entered.
 void Menu::addFriends() {
     string candidateFriend;
     cout << "Enter friend's name: ";
@@ -257,6 +302,9 @@ void Menu::addFriends() {
     cout << string(100, '=') << endl;
 }
 
+//Function:     switchUser
+//Description:  Switches from the current user to a different user,
+//              provided that the given username is valid.
 void Menu::switchUser() {
     bool realUser = false;
     while (!realUser) {
@@ -275,6 +323,10 @@ void Menu::switchUser() {
     createWelcome(banner);
 }
 
+//Function:     followHash
+//Description:  Prompts the user for a hashtag topic to follow.  If the hashtag
+//              did not exist, it is is added to the hashtag buffer.  The user is
+//              added to the followers of the hashtag.
 void Menu::followHash() {
     string newHash;
     cout << "Enter hashtag topic: ";
@@ -292,12 +344,17 @@ void Menu::followHash() {
     cout << endl<< string(100, '=') << endl;
 }
 
+//Function:     quit
+//Description:  Displays a closing message, and gracefully exits the program.
 void Menu::quit() {
     cout << string(10, ' ') << string(59, '=') << endl
          << string(10, ' ') << "|         Thank you for using War Eagle Chat System        |" << endl
          << string(10, ' ') << string(59, '=') << endl;
 }
 
+//Function:     createWelcome
+//Description:  Creates a welcome banner with unique to each task and
+//              length of the current user's username.
 void Menu::createWelcome(string banner) {
     banner = "|          " + banner + "          |";
     unsigned long bannerLength = banner.length();

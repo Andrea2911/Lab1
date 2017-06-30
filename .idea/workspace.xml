@@ -12,8 +12,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="78140d36-d7a6-4b10-9439-47aa37d3d21b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/User.cpp" afterPath="$PROJECT_DIR$/User.cpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/aew0056_1.cpp" afterPath="$PROJECT_DIR$/aew0056_1.cpp" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -27,24 +25,24 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="aew0056_1.cpp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="aew0056_1.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/aew0056_1.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="707">
-              <caret line="282" column="0" lean-forward="false" selection-start-line="282" selection-start-column="0" selection-end-line="282" selection-end-column="0" />
+            <state relative-caret-position="5814">
+              <caret line="356" column="54" lean-forward="false" selection-start-line="356" selection-start-column="54" selection-end-line="356" selection-end-column="54" />
               <folding>
-                <element signature="e#40#59#0" expanded="true" />
-                <element signature="e#590#604#0" expanded="false" />
+                <element signature="e#495#514#0" expanded="true" />
+                <element signature="e#1045#1059#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="User.cpp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="User.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/User.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="334">
-              <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+            <state relative-caret-position="1020">
+              <caret line="51" column="7" lean-forward="false" selection-start-line="51" selection-start-column="7" selection-end-line="51" selection-end-column="7" />
               <folding>
                 <element signature="e#41#58#0" expanded="true" />
               </folding>
@@ -94,8 +92,8 @@
       <list>
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/User.h" />
-        <option value="$PROJECT_DIR$/aew0056_1.cpp" />
         <option value="$PROJECT_DIR$/User.cpp" />
+        <option value="$PROJECT_DIR$/aew0056_1.cpp" />
       </list>
     </option>
   </component>
@@ -385,12 +383,12 @@
       <updated>1498586155063</updated>
       <workItem from="1498586157002" duration="20418000" />
       <workItem from="1498705112376" duration="21669000" />
-      <workItem from="1498788332613" duration="73000" />
+      <workItem from="1498788332613" duration="2673000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42160000" />
+    <option name="totallyTimeSpent" value="44760000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1857" height="1092" extended-state="6" />
@@ -428,21 +426,16 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/aew0056_1.cpp</url>
-          <line>8</line>
+          <line>17</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/aew0056_1.cpp</url>
-          <line>154</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/aew0056_1.cpp</url>
-          <line>200</line>
-          <option name="timeStamp" value="7" />
+          <line>189</line>
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="9" />
+      <option name="time" value="11" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -452,8 +445,8 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#40#59#0" expanded="true" />
-            <element signature="e#590#604#0" expanded="false" />
+            <element signature="e#495#514#0" expanded="true" />
+            <element signature="e#1045#1059#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -499,8 +492,8 @@
         <state relative-caret-position="3600">
           <caret line="180" column="0" lean-forward="false" selection-start-line="180" selection-start-column="0" selection-end-line="180" selection-end-column="0" />
           <folding>
-            <element signature="e#40#59#0" expanded="true" />
-            <element signature="e#590#604#0" expanded="false" />
+            <element signature="e#495#514#0" expanded="true" />
+            <element signature="e#1045#1059#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -574,23 +567,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/aew0056_1.cpp">
+    <entry file="file://$PROJECT_DIR$/User.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="707">
-          <caret line="282" column="0" lean-forward="false" selection-start-line="282" selection-start-column="0" selection-end-line="282" selection-end-column="0" />
+        <state relative-caret-position="1020">
+          <caret line="51" column="7" lean-forward="false" selection-start-line="51" selection-start-column="7" selection-end-line="51" selection-end-column="7" />
           <folding>
-            <element signature="e#40#59#0" expanded="true" />
-            <element signature="e#590#604#0" expanded="false" />
+            <element signature="e#41#58#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/User.cpp">
+    <entry file="file://$PROJECT_DIR$/aew0056_1.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+        <state relative-caret-position="5814">
+          <caret line="356" column="54" lean-forward="false" selection-start-line="356" selection-start-column="54" selection-end-line="356" selection-end-column="54" />
           <folding>
-            <element signature="e#41#58#0" expanded="true" />
+            <element signature="e#495#514#0" expanded="true" />
+            <element signature="e#1045#1059#0" expanded="false" />
           </folding>
         </state>
       </provider>
