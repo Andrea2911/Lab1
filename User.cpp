@@ -31,15 +31,9 @@ bool User::operator<(const User& right) const {
 }
 
 string User::findFollowedHashtags(std::string hashBuffer, string username) {
-//    stringstream s(hashBuffer);
     string currentItem;
     string currentHashList;
     string followedHashes;
-//    for (stringstream s(hashBuffer); s >> currentItem; ) {
-//        if (currentItem.find("#") != std::string::npos) {
-//            currentHash = currentItem;
-//        }
-//    }
     while (hashBuffer.length() > 0) {
         unsigned long hashIndex = hashBuffer.find("#");
         if (hashIndex != std::string::npos) {

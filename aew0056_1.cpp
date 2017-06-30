@@ -280,6 +280,7 @@ void Menu::followHash() {
     cout << "Enter hashtag topic: ";
     cin >> newHash;
     cin.ignore();
+
     if (hashtagBuffer.find(newHash) == string::npos) {
         hashtagBuffer += " " + newHash + " " + currentUser.getUsername();
     }
