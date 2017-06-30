@@ -84,10 +84,22 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/awalker/CLionProjects/Lab1git/Lab1/Menu.cpp">
+			<Option target="Lab1"/>
+		</Unit>
+		<Unit filename="/home/awalker/CLionProjects/Lab1git/Lab1/Menu.h">
+			<Option target="Lab1"/>
+		</Unit>
 		<Unit filename="/home/awalker/CLionProjects/Lab1git/Lab1/User.cpp">
 			<Option target="Lab1"/>
 		</Unit>
 		<Unit filename="/home/awalker/CLionProjects/Lab1git/Lab1/User.h">
+			<Option target="Lab1"/>
+		</Unit>
+		<Unit filename="/home/awalker/CLionProjects/Lab1git/Lab1/WallPage.cpp">
+			<Option target="Lab1"/>
+		</Unit>
+		<Unit filename="/home/awalker/CLionProjects/Lab1git/Lab1/WallPage.h">
 			<Option target="Lab1"/>
 		</Unit>
 		<Unit filename="/home/awalker/CLionProjects/Lab1git/Lab1/aew0056_1.cpp">

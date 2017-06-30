@@ -6,6 +6,26 @@
 
 #IncludeRegexTransform: 
 
+/home/awalker/CLionProjects/Lab1git/Lab1/Menu.cpp
+Menu.h
+/home/awalker/CLionProjects/Lab1git/Lab1/Menu.h
+
+/home/awalker/CLionProjects/Lab1git/Lab1/Menu.h
+iostream
+-
+string
+-
+sstream
+-
+vector
+-
+set
+-
+User.h
+/home/awalker/CLionProjects/Lab1git/Lab1/User.h
+WallPage.h
+/home/awalker/CLionProjects/Lab1git/Lab1/WallPage.h
+
 /home/awalker/CLionProjects/Lab1git/Lab1/User.cpp
 User.h
 /home/awalker/CLionProjects/Lab1git/Lab1/User.h
@@ -20,17 +40,19 @@ set
 string
 -
 
+/home/awalker/CLionProjects/Lab1git/Lab1/WallPage.cpp
+WallPage.h
+/home/awalker/CLionProjects/Lab1git/Lab1/WallPage.h
+
+/home/awalker/CLionProjects/Lab1git/Lab1/WallPage.h
+User.h
+/home/awalker/CLionProjects/Lab1git/Lab1/User.h
+vector
+-
+
 /home/awalker/CLionProjects/Lab1git/Lab1/aew0056_1.cpp
 iostream
 -
-string
--
-sstream
--
-vector
--
-set
--
-User.h
-/home/awalker/CLionProjects/Lab1git/Lab1/User.h
+Menu.h
+/home/awalker/CLionProjects/Lab1git/Lab1/Menu.h
 

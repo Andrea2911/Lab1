@@ -123,6 +123,33 @@ Lab1/fast:
 	$(MAKE) -f CMakeFiles/Lab1.dir/build.make CMakeFiles/Lab1.dir/build
 .PHONY : Lab1/fast
 
+Menu.o: Menu.cpp.o
+
+.PHONY : Menu.o
+
+# target to build an object file
+Menu.cpp.o:
+	$(MAKE) -f CMakeFiles/Lab1.dir/build.make CMakeFiles/Lab1.dir/Menu.cpp.o
+.PHONY : Menu.cpp.o
+
+Menu.i: Menu.cpp.i
+
+.PHONY : Menu.i
+
+# target to preprocess a source file
+Menu.cpp.i:
+	$(MAKE) -f CMakeFiles/Lab1.dir/build.make CMakeFiles/Lab1.dir/Menu.cpp.i
+.PHONY : Menu.cpp.i
+
+Menu.s: Menu.cpp.s
+
+.PHONY : Menu.s
+
+# target to generate assembly for a file
+Menu.cpp.s:
+	$(MAKE) -f CMakeFiles/Lab1.dir/build.make CMakeFiles/Lab1.dir/Menu.cpp.s
+.PHONY : Menu.cpp.s
+
 User.o: User.cpp.o
 
 .PHONY : User.o
@@ -149,6 +176,33 @@ User.s: User.cpp.s
 User.cpp.s:
 	$(MAKE) -f CMakeFiles/Lab1.dir/build.make CMakeFiles/Lab1.dir/User.cpp.s
 .PHONY : User.cpp.s
+
+WallPage.o: WallPage.cpp.o
+
+.PHONY : WallPage.o
+
+# target to build an object file
+WallPage.cpp.o:
+	$(MAKE) -f CMakeFiles/Lab1.dir/build.make CMakeFiles/Lab1.dir/WallPage.cpp.o
+.PHONY : WallPage.cpp.o
+
+WallPage.i: WallPage.cpp.i
+
+.PHONY : WallPage.i
+
+# target to preprocess a source file
+WallPage.cpp.i:
+	$(MAKE) -f CMakeFiles/Lab1.dir/build.make CMakeFiles/Lab1.dir/WallPage.cpp.i
+.PHONY : WallPage.cpp.i
+
+WallPage.s: WallPage.cpp.s
+
+.PHONY : WallPage.s
+
+# target to generate assembly for a file
+WallPage.cpp.s:
+	$(MAKE) -f CMakeFiles/Lab1.dir/build.make CMakeFiles/Lab1.dir/WallPage.cpp.s
+.PHONY : WallPage.cpp.s
 
 aew0056_1.o: aew0056_1.cpp.o
 
@@ -186,9 +240,15 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... Lab1"
+	@echo "... Menu.o"
+	@echo "... Menu.i"
+	@echo "... Menu.s"
 	@echo "... User.o"
 	@echo "... User.i"
 	@echo "... User.s"
+	@echo "... WallPage.o"
+	@echo "... WallPage.i"
+	@echo "... WallPage.s"
 	@echo "... aew0056_1.o"
 	@echo "... aew0056_1.i"
 	@echo "... aew0056_1.s"
