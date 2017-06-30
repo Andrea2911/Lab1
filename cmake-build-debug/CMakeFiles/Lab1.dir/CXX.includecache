@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/awalker/CLionProjects/Lab1git/Lab1/User.cpp
+User.h
+/home/awalker/CLionProjects/Lab1git/Lab1/User.h
+sstream
+-
+string
+-
+
+/home/awalker/CLionProjects/Lab1git/Lab1/User.h
+set
+-
+string
+-
+
+/home/awalker/CLionProjects/Lab1git/Lab1/aew0056_1.cpp
+iostream
+-
+string
+-
+sstream
+-
+vector
+-
+set
+-
+User.h
+/home/awalker/CLionProjects/Lab1git/Lab1/User.h
+
