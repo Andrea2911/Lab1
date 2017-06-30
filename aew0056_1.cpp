@@ -294,7 +294,7 @@ void Menu::followHash() {
 void Menu::quit() {
     cout << string(10, ' ') << string(59, '=') << endl
          << string(10, ' ') << "|         Thank you for using War Eagle Chat System        |" << endl
-         << string(10, ' ') << string(59, '=');
+         << string(10, ' ') << string(59, '=') << endl;
 }
 
 void Menu::createWelcome(string banner) {
