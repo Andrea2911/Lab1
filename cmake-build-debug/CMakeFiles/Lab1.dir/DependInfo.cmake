@@ -4,12 +4,12 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/awalker/CLionProjects/Lab1git/Lab1/Menu.cpp" "/home/awalker/CLionProjects/Lab1git/Lab1/cmake-build-debug/CMakeFiles/Lab1.dir/Menu.cpp.o"
-  "/home/awalker/CLionProjects/Lab1git/Lab1/User.cpp" "/home/awalker/CLionProjects/Lab1git/Lab1/cmake-build-debug/CMakeFiles/Lab1.dir/User.cpp.o"
-  "/home/awalker/CLionProjects/Lab1git/Lab1/WallPage.cpp" "/home/awalker/CLionProjects/Lab1git/Lab1/cmake-build-debug/CMakeFiles/Lab1.dir/WallPage.cpp.o"
-  "/home/awalker/CLionProjects/Lab1git/Lab1/aew0056_1.cpp" "/home/awalker/CLionProjects/Lab1git/Lab1/cmake-build-debug/CMakeFiles/Lab1.dir/aew0056_1.cpp.o"
+  "/Users/Andrea/CLionProjects/Lab1/Menu.cpp" "/Users/Andrea/CLionProjects/Lab1/cmake-build-debug/CMakeFiles/Lab1.dir/Menu.cpp.o"
+  "/Users/Andrea/CLionProjects/Lab1/User.cpp" "/Users/Andrea/CLionProjects/Lab1/cmake-build-debug/CMakeFiles/Lab1.dir/User.cpp.o"
+  "/Users/Andrea/CLionProjects/Lab1/WallPage.cpp" "/Users/Andrea/CLionProjects/Lab1/cmake-build-debug/CMakeFiles/Lab1.dir/WallPage.cpp.o"
+  "/Users/Andrea/CLionProjects/Lab1/aew0056_1.cpp" "/Users/Andrea/CLionProjects/Lab1/cmake-build-debug/CMakeFiles/Lab1.dir/aew0056_1.cpp.o"
   )
-set(CMAKE_CXX_COMPILER_ID "GNU")
+set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH

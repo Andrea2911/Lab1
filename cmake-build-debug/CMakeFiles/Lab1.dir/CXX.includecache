@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/awalker/CLionProjects/Lab1git/Lab1/Menu.cpp
+/Users/Andrea/CLionProjects/Lab1/Menu.cpp
 Menu.h
-/home/awalker/CLionProjects/Lab1git/Lab1/Menu.h
+/Users/Andrea/CLionProjects/Lab1/Menu.h
 
-/home/awalker/CLionProjects/Lab1git/Lab1/Menu.h
+/Users/Andrea/CLionProjects/Lab1/Menu.h
 iostream
 -
 string
@@ -22,37 +22,35 @@ vector
 set
 -
 User.h
-/home/awalker/CLionProjects/Lab1git/Lab1/User.h
+/Users/Andrea/CLionProjects/Lab1/User.h
 WallPage.h
-/home/awalker/CLionProjects/Lab1git/Lab1/WallPage.h
+/Users/Andrea/CLionProjects/Lab1/WallPage.h
 
-/home/awalker/CLionProjects/Lab1git/Lab1/User.cpp
+/Users/Andrea/CLionProjects/Lab1/User.cpp
 User.h
-/home/awalker/CLionProjects/Lab1git/Lab1/User.h
-sstream
--
-string
--
+/Users/Andrea/CLionProjects/Lab1/User.h
 
-/home/awalker/CLionProjects/Lab1git/Lab1/User.h
+/Users/Andrea/CLionProjects/Lab1/User.h
 set
 -
 string
 -
+sstream
+-
 
-/home/awalker/CLionProjects/Lab1git/Lab1/WallPage.cpp
+/Users/Andrea/CLionProjects/Lab1/WallPage.cpp
 WallPage.h
-/home/awalker/CLionProjects/Lab1git/Lab1/WallPage.h
+/Users/Andrea/CLionProjects/Lab1/WallPage.h
 
-/home/awalker/CLionProjects/Lab1git/Lab1/WallPage.h
+/Users/Andrea/CLionProjects/Lab1/WallPage.h
 User.h
-/home/awalker/CLionProjects/Lab1git/Lab1/User.h
+/Users/Andrea/CLionProjects/Lab1/User.h
 vector
 -
 
-/home/awalker/CLionProjects/Lab1git/Lab1/aew0056_1.cpp
+/Users/Andrea/CLionProjects/Lab1/aew0056_1.cpp
 iostream
 -
 Menu.h
-/home/awalker/CLionProjects/Lab1git/Lab1/Menu.h
+/Users/Andrea/CLionProjects/Lab1/Menu.h
 

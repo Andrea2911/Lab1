@@ -6,14 +6,12 @@
 #define WALLPAGE_H
 #include "User.h"
 #include <vector>
+
 using namespace std;
+
 class WallPage {
 public:
-   // WallPage(User newUser);
-//    WallPage(User newUser) : user("superuser") {}
     void createWallPage(string messageBuffer, User user, vector<string>& messages);
-//private:
-//    User user;
 };
 
 

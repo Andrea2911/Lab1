@@ -3,8 +3,6 @@
 //
 
 #include "User.h"
-#include <sstream>
-#include <string>
 
 using namespace std;
 
@@ -44,7 +42,7 @@ string User::findFollowedHashtags(std::string hashBuffer, string username) {
             currentHashList = hashBuffer.substr(hashIndex, followersEnd - hashIndex);
             stringstream s(currentHashList);
             string hash;
-            for (s; s >> currentItem;) {
+            for (; s >> currentItem;) {
                 if (currentItem.find("#") != std::string::npos) {
                     hash = currentItem;
                 } else if (currentItem.compare(username) == 0) {

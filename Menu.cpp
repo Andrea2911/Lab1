@@ -6,10 +6,6 @@
 
 using namespace std;
 
-//Menu::Menu() {
-//    currentUser = User("no");
-//}
-
 //Function:     displayMenu
 //Description:  Displays the menu for the War Eagle Chat system, giving
 //              the user eight different options for how to proceed.
@@ -34,6 +30,10 @@ void Menu::displayMenu() {
             cout << "No users have been created." << endl << endl;
             continue;
         }
+        if (userList.size() == 1 && (choiceChar == 'c' || choiceChar == 'f')){
+            cout << "Only one user has been created, please choose a different option." << endl << endl;
+            continue;
+        }
         switch (choiceChar) {
             case 'n':
                 createUser();
@@ -54,10 +54,10 @@ void Menu::displayMenu() {
                 followHash();
                 break;
             case 'c':
-                if (userList.size() == 1) {
-                    cout << "You cannot switch users, only one user has been created." << endl << endl;
-                    continue;
-                }
+//                if (userList.size() == 1) {
+//                    cout << "You cannot switch users, only one user has been created." << endl << endl;
+//                    continue;
+//                }
                 switchUser();
                 break;
             case 'q':
@@ -77,21 +77,25 @@ void Menu::displayMenu() {
 //              list of users.
 void Menu::createUser() {
     string candidateUser;
-    cout << "Please enter user name: ";
-    cin >> candidateUser;
-    cin.ignore();
-    cout << endl;
-    if (userList.find(User(candidateUser)) != userList.end()) {
-        cout << "Username " + candidateUser + " is already taken." << endl;
+    bool validUser = false;
+    while (!validUser) {
+        cout << "Please enter user name: ";
+        cin >> candidateUser;
+        cin.ignore();
+        cout << endl;
+        if (userList.find(User(candidateUser)) != userList.end()) {
+            cout << "Username " + candidateUser + " is already taken. Choose a different username." << endl << endl;
+            continue;
+        }
+        validUser = true;
     }
-    else {
-        currentUser = candidateUser;
-        User newUser(currentUser);
-        userList.insert(newUser);
-        newUser.addFriend(currentUser.getUsername());
-        string banner = "Welcome to War Eagle Chat System, " + currentUser.getUsername() + "!";
-        createWelcome(banner);
-    }
+    currentUser = candidateUser;
+    User newUser(currentUser);
+    userList.insert(newUser);
+    newUser.addFriend(currentUser.getUsername());
+    string banner = "Welcome to War Eagle Chat System, " + currentUser.getUsername() + "!";
+    createWelcome(banner);
+
 }
 
 // Function:    postMessage
@@ -183,7 +187,7 @@ void Menu::displayHome() {
             else if (singleMessage.find("#") != std::string::npos) {
                 stringstream hashStream(hashes);
                 string hashtag;
-                for (hashStream; hashStream >> hashtag; ) {
+                for (; hashStream >> hashtag; ) {
                     if (singleMessage.find(hashtag) != std::string::npos) {
                         userMessages.push_back(singleMessage);
                         break;
@@ -217,12 +221,22 @@ void Menu::displayHome() {
 //              friend list.  If the username is invalid, the user is continually
 //              prompted until a valid username is entered.
 void Menu::addFriends() {
+    bool validUser = false;
     string candidateFriend;
-    cout << "Enter friend's name: ";
-    cin >> candidateFriend;
-    cout << endl;
-    cin.ignore();
+    while (!validUser) {
+        cout << "Enter friend's name: ";
+        cin >> candidateFriend;
+        cout << endl;
+        cin.ignore();
+        if (userList.find(User(candidateFriend)) == userList.end()) {
+            cout << candidateFriend + " is not a valid user." << endl << endl;
+            continue;
+        }
+    validUser = true;
+    }
     currentUser.addFriend(candidateFriend);
+    userList.erase(currentUser.getUsername());
+    userList.insert(currentUser);
     cout << string(100, '=') << endl;
 }
 
@@ -237,11 +251,17 @@ void Menu::switchUser() {
         cin >> candidateUser;
         cout << endl;
         cin.ignore();
+        if (currentUser.getUsername() == candidateUser) {
+            cout << candidateUser + " is already the current user." << endl << endl;
+            continue;
+        }
         set<User>::iterator iter = userList.find(candidateUser);
         if (iter != userList.end()) {
             currentUser = *iter;
             realUser = true;
+            continue;
         }
+        cout << candidateUser + " has not been created, and is not a valid user." << endl << endl;
     }
     string banner = "Welcome back to War Eagle Chat System, " + currentUser.getUsername() + "!";
     createWelcome(banner);
@@ -252,11 +272,29 @@ void Menu::switchUser() {
 //              did not exist, it is is added to the hashtag buffer.  The user is
 //              added to the followers of the hashtag.
 void Menu::followHash() {
+    bool validHash = false;
     string newHash;
-    cout << "Enter hashtag topic: ";
-    cin >> newHash;
-    cin.ignore();
-
+    while (!validHash) {
+        validHash = true;
+//        string newHash;
+        cout << "Enter hashtag topic: ";
+        cin >> newHash;
+        cin.ignore();
+        cout << endl;
+        if (newHash.at(0) != '#') {
+            validHash = false;
+            cout << "Hashtag topics must begin with '#'" << endl << endl;
+            continue;
+        }
+        string hashString = newHash.substr(1, std::string::npos);
+        for (char c : hashString) {
+            if (!((c <= 'z' && c >= 'a') || (c <= 'Z' && c >= 'A'))) {
+                validHash = false;
+                cout << "Hashtag topcis can only contain letters" << endl << endl;
+                continue;
+            }
+        }
+    }
     if (hashtagBuffer.find(newHash) == string::npos) {
         hashtagBuffer += " " + newHash + " " + currentUser.getUsername();
     }
@@ -265,7 +303,7 @@ void Menu::followHash() {
         unsigned long hashSize = newHash.size();
         hashtagBuffer.insert(index + hashSize, " " + currentUser.getUsername());
     }
-    cout << endl<< string(100, '=') << endl;
+    cout << string(100, '=') << endl;
 }
 
 //Function:     quit

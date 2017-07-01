@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /opt/clion-2017.1.3/bin/cmake/bin/cmake
+CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /opt/clion-2017.1.3/bin/cmake/bin/cmake -E remove -f
+RM = /Applications/CLion.app/Contents/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/awalker/CLionProjects/Lab1git/Lab1
+CMAKE_SOURCE_DIR = /Users/Andrea/CLionProjects/Lab1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/awalker/CLionProjects/Lab1git/Lab1/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/Andrea/CLionProjects/Lab1/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Lab1.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/Lab1.dir/flags.make
 
 CMakeFiles/Lab1.dir/aew0056_1.cpp.o: CMakeFiles/Lab1.dir/flags.make
 CMakeFiles/Lab1.dir/aew0056_1.cpp.o: ../aew0056_1.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/awalker/CLionProjects/Lab1git/Lab1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Lab1.dir/aew0056_1.cpp.o"
-	/usr/bin/g++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lab1.dir/aew0056_1.cpp.o -c /home/awalker/CLionProjects/Lab1git/Lab1/aew0056_1.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Andrea/CLionProjects/Lab1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Lab1.dir/aew0056_1.cpp.o"
+	/usr/bin/g++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lab1.dir/aew0056_1.cpp.o -c /Users/Andrea/CLionProjects/Lab1/aew0056_1.cpp
 
 CMakeFiles/Lab1.dir/aew0056_1.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lab1.dir/aew0056_1.cpp.i"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/awalker/CLionProjects/Lab1git/Lab1/aew0056_1.cpp > CMakeFiles/Lab1.dir/aew0056_1.cpp.i
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Andrea/CLionProjects/Lab1/aew0056_1.cpp > CMakeFiles/Lab1.dir/aew0056_1.cpp.i
 
 CMakeFiles/Lab1.dir/aew0056_1.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lab1.dir/aew0056_1.cpp.s"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/awalker/CLionProjects/Lab1git/Lab1/aew0056_1.cpp -o CMakeFiles/Lab1.dir/aew0056_1.cpp.s
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Andrea/CLionProjects/Lab1/aew0056_1.cpp -o CMakeFiles/Lab1.dir/aew0056_1.cpp.s
 
 CMakeFiles/Lab1.dir/aew0056_1.cpp.o.requires:
 
@@ -83,16 +83,16 @@ CMakeFiles/Lab1.dir/aew0056_1.cpp.o.provides.build: CMakeFiles/Lab1.dir/aew0056_
 
 CMakeFiles/Lab1.dir/User.cpp.o: CMakeFiles/Lab1.dir/flags.make
 CMakeFiles/Lab1.dir/User.cpp.o: ../User.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/awalker/CLionProjects/Lab1git/Lab1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Lab1.dir/User.cpp.o"
-	/usr/bin/g++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lab1.dir/User.cpp.o -c /home/awalker/CLionProjects/Lab1git/Lab1/User.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Andrea/CLionProjects/Lab1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Lab1.dir/User.cpp.o"
+	/usr/bin/g++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lab1.dir/User.cpp.o -c /Users/Andrea/CLionProjects/Lab1/User.cpp
 
 CMakeFiles/Lab1.dir/User.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lab1.dir/User.cpp.i"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/awalker/CLionProjects/Lab1git/Lab1/User.cpp > CMakeFiles/Lab1.dir/User.cpp.i
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Andrea/CLionProjects/Lab1/User.cpp > CMakeFiles/Lab1.dir/User.cpp.i
 
 CMakeFiles/Lab1.dir/User.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lab1.dir/User.cpp.s"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/awalker/CLionProjects/Lab1git/Lab1/User.cpp -o CMakeFiles/Lab1.dir/User.cpp.s
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Andrea/CLionProjects/Lab1/User.cpp -o CMakeFiles/Lab1.dir/User.cpp.s
 
 CMakeFiles/Lab1.dir/User.cpp.o.requires:
 
@@ -107,16 +107,16 @@ CMakeFiles/Lab1.dir/User.cpp.o.provides.build: CMakeFiles/Lab1.dir/User.cpp.o
 
 CMakeFiles/Lab1.dir/Menu.cpp.o: CMakeFiles/Lab1.dir/flags.make
 CMakeFiles/Lab1.dir/Menu.cpp.o: ../Menu.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/awalker/CLionProjects/Lab1git/Lab1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Lab1.dir/Menu.cpp.o"
-	/usr/bin/g++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lab1.dir/Menu.cpp.o -c /home/awalker/CLionProjects/Lab1git/Lab1/Menu.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Andrea/CLionProjects/Lab1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Lab1.dir/Menu.cpp.o"
+	/usr/bin/g++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lab1.dir/Menu.cpp.o -c /Users/Andrea/CLionProjects/Lab1/Menu.cpp
 
 CMakeFiles/Lab1.dir/Menu.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lab1.dir/Menu.cpp.i"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/awalker/CLionProjects/Lab1git/Lab1/Menu.cpp > CMakeFiles/Lab1.dir/Menu.cpp.i
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Andrea/CLionProjects/Lab1/Menu.cpp > CMakeFiles/Lab1.dir/Menu.cpp.i
 
 CMakeFiles/Lab1.dir/Menu.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lab1.dir/Menu.cpp.s"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/awalker/CLionProjects/Lab1git/Lab1/Menu.cpp -o CMakeFiles/Lab1.dir/Menu.cpp.s
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Andrea/CLionProjects/Lab1/Menu.cpp -o CMakeFiles/Lab1.dir/Menu.cpp.s
 
 CMakeFiles/Lab1.dir/Menu.cpp.o.requires:
 
@@ -131,16 +131,16 @@ CMakeFiles/Lab1.dir/Menu.cpp.o.provides.build: CMakeFiles/Lab1.dir/Menu.cpp.o
 
 CMakeFiles/Lab1.dir/WallPage.cpp.o: CMakeFiles/Lab1.dir/flags.make
 CMakeFiles/Lab1.dir/WallPage.cpp.o: ../WallPage.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/awalker/CLionProjects/Lab1git/Lab1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Lab1.dir/WallPage.cpp.o"
-	/usr/bin/g++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lab1.dir/WallPage.cpp.o -c /home/awalker/CLionProjects/Lab1git/Lab1/WallPage.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Andrea/CLionProjects/Lab1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Lab1.dir/WallPage.cpp.o"
+	/usr/bin/g++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lab1.dir/WallPage.cpp.o -c /Users/Andrea/CLionProjects/Lab1/WallPage.cpp
 
 CMakeFiles/Lab1.dir/WallPage.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lab1.dir/WallPage.cpp.i"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/awalker/CLionProjects/Lab1git/Lab1/WallPage.cpp > CMakeFiles/Lab1.dir/WallPage.cpp.i
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Andrea/CLionProjects/Lab1/WallPage.cpp > CMakeFiles/Lab1.dir/WallPage.cpp.i
 
 CMakeFiles/Lab1.dir/WallPage.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lab1.dir/WallPage.cpp.s"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/awalker/CLionProjects/Lab1git/Lab1/WallPage.cpp -o CMakeFiles/Lab1.dir/WallPage.cpp.s
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Andrea/CLionProjects/Lab1/WallPage.cpp -o CMakeFiles/Lab1.dir/WallPage.cpp.s
 
 CMakeFiles/Lab1.dir/WallPage.cpp.o.requires:
 
@@ -169,7 +169,7 @@ Lab1: CMakeFiles/Lab1.dir/Menu.cpp.o
 Lab1: CMakeFiles/Lab1.dir/WallPage.cpp.o
 Lab1: CMakeFiles/Lab1.dir/build.make
 Lab1: CMakeFiles/Lab1.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/awalker/CLionProjects/Lab1git/Lab1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable Lab1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/Andrea/CLionProjects/Lab1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable Lab1"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Lab1.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -189,6 +189,6 @@ CMakeFiles/Lab1.dir/clean:
 .PHONY : CMakeFiles/Lab1.dir/clean
 
 CMakeFiles/Lab1.dir/depend:
-	cd /home/awalker/CLionProjects/Lab1git/Lab1/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/awalker/CLionProjects/Lab1git/Lab1 /home/awalker/CLionProjects/Lab1git/Lab1 /home/awalker/CLionProjects/Lab1git/Lab1/cmake-build-debug /home/awalker/CLionProjects/Lab1git/Lab1/cmake-build-debug /home/awalker/CLionProjects/Lab1git/Lab1/cmake-build-debug/CMakeFiles/Lab1.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/Andrea/CLionProjects/Lab1/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/Andrea/CLionProjects/Lab1 /Users/Andrea/CLionProjects/Lab1 /Users/Andrea/CLionProjects/Lab1/cmake-build-debug /Users/Andrea/CLionProjects/Lab1/cmake-build-debug /Users/Andrea/CLionProjects/Lab1/cmake-build-debug/CMakeFiles/Lab1.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/Lab1.dir/depend
 

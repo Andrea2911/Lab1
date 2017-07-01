@@ -7,6 +7,8 @@
 
 #include <set>
 #include <string>
+#include <sstream>
+
 
 class User {
 public:
@@ -14,7 +16,6 @@ public:
 
     std::string name;
     std::set<std::string> friends;
-    std::set<std::string> followedHashtags;
 
     std::string getUsername();
     void addFriend(std::string newFriend);
