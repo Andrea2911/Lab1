@@ -1,6 +1,6 @@
-//
-// Created by awalker on 6/30/17.
-//
+// Lab 1:       War Eagle Chat System
+// File:        Menu.h
+// Description: Class definition of the Menu class.
 
 #ifndef MENU_H
 #define MENU_H
@@ -12,9 +12,15 @@
 #include <set>
 #include "User.h"
 #include "WallPage.h"
+#include "HomePage.h"
 
 using namespace std;
 
+// Class: Menu
+// Description: This class creates a Menu object which represents
+//              the menu of options for the  War Eagle Chat System.  This class
+//              handles the user's inputs and displays the output requested
+//              by the user.
 class Menu {
 public:
     Menu() : currentUser("superuser") {}

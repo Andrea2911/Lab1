@@ -6,6 +6,18 @@
 
 #IncludeRegexTransform: 
 
+/Users/Andrea/CLionProjects/Lab1/HomePage.cpp
+HomePage.h
+/Users/Andrea/CLionProjects/Lab1/HomePage.h
+
+/Users/Andrea/CLionProjects/Lab1/HomePage.h
+User.h
+/Users/Andrea/CLionProjects/Lab1/User.h
+vector
+-
+string
+-
+
 /Users/Andrea/CLionProjects/Lab1/Menu.cpp
 Menu.h
 /Users/Andrea/CLionProjects/Lab1/Menu.h
@@ -25,6 +37,8 @@ User.h
 /Users/Andrea/CLionProjects/Lab1/User.h
 WallPage.h
 /Users/Andrea/CLionProjects/Lab1/WallPage.h
+HomePage.h
+/Users/Andrea/CLionProjects/Lab1/HomePage.h
 
 /Users/Andrea/CLionProjects/Lab1/User.cpp
 User.h

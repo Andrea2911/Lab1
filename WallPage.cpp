@@ -1,9 +1,12 @@
-//
-// Created by awalker on 6/30/17.
-//
+// Lab 1:       War Eagle Chat System
+// File:        WallPage.cpp
+// Description: Class implementation of the WallPage class.
 
 #include "WallPage.h"
 
+// Function:     createWallPage
+// Description:  Finds a user's messages and modifies the parameter messages
+//               to be used to display the User's WallPage.
 void WallPage::createWallPage(string messageBuffer, User user, vector<string>& messages) {
     string singleMessage;
     while (messageBuffer.length() > 0) {

@@ -80,6 +80,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/Andrea/CLionProjects/Lab1/HomePage.cpp">
+			<Option target="Lab1"/>
+		</Unit>
+		<Unit filename="/Users/Andrea/CLionProjects/Lab1/HomePage.h">
+			<Option target="Lab1"/>
+		</Unit>
 		<Unit filename="/Users/Andrea/CLionProjects/Lab1/Menu.cpp">
 			<Option target="Lab1"/>
 		</Unit>

@@ -123,6 +123,33 @@ Lab1/fast:
 	$(MAKE) -f CMakeFiles/Lab1.dir/build.make CMakeFiles/Lab1.dir/build
 .PHONY : Lab1/fast
 
+HomePage.o: HomePage.cpp.o
+
+.PHONY : HomePage.o
+
+# target to build an object file
+HomePage.cpp.o:
+	$(MAKE) -f CMakeFiles/Lab1.dir/build.make CMakeFiles/Lab1.dir/HomePage.cpp.o
+.PHONY : HomePage.cpp.o
+
+HomePage.i: HomePage.cpp.i
+
+.PHONY : HomePage.i
+
+# target to preprocess a source file
+HomePage.cpp.i:
+	$(MAKE) -f CMakeFiles/Lab1.dir/build.make CMakeFiles/Lab1.dir/HomePage.cpp.i
+.PHONY : HomePage.cpp.i
+
+HomePage.s: HomePage.cpp.s
+
+.PHONY : HomePage.s
+
+# target to generate assembly for a file
+HomePage.cpp.s:
+	$(MAKE) -f CMakeFiles/Lab1.dir/build.make CMakeFiles/Lab1.dir/HomePage.cpp.s
+.PHONY : HomePage.cpp.s
+
 Menu.o: Menu.cpp.o
 
 .PHONY : Menu.o
@@ -240,6 +267,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... Lab1"
+	@echo "... HomePage.o"
+	@echo "... HomePage.i"
+	@echo "... HomePage.s"
 	@echo "... Menu.o"
 	@echo "... Menu.i"
 	@echo "... Menu.s"
