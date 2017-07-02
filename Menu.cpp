@@ -302,10 +302,12 @@ void Menu::followHash() {
         }
         //Checks that hashtag contains only letters
         string hashString = newHash.substr(1, std::string::npos);
-        for (char c : hashString) {
+        //for (char c : hashString) {
+        for (int i = 0; i < hashString.size(); i++) {
+            char c = hashString[i];
             if (!((c <= 'z' && c >= 'a') || (c <= 'Z' && c >= 'A'))) {
                 validHash = false;
-                cout << "Hashtag topcis can only contain letters" << endl << endl;
+                cout << "Hashtag topics can only contain letters" << endl << endl;
                 continue;
             }
         }
