@@ -173,38 +173,6 @@ void Menu::displayHome() {
     string hashes = currentUser.findFollowedHashtags(hashtagBuffer, currentUser.getUsername());
     HomePage home;
     home.createHomePage(bufferCopy, hashes, currentUser, userMessages);
-//    while (bufferCopy.length() > 0) {
-//        unsigned long userStart = bufferCopy.find("(*") + 2;
-//        if (userStart != std::string::npos) {
-//            unsigned long userEnd = bufferCopy.find("*)");
-//            string user = bufferCopy.substr(userStart, userEnd - userStart);
-//            unsigned long messageEnd = bufferCopy.find("(*", userEnd + 2);
-//            if (messageEnd == std::string::npos) {
-//                messageEnd = bufferCopy.length();
-//            }
-//            singleMessage = bufferCopy.substr(userEnd + 2, messageEnd - userEnd - 2);
-//            singleMessage = user + " >\n" + singleMessage;
-//
-//            if (user == currentUser.getUsername()) {
-//                userMessages.push_back(singleMessage);
-//            }
-//            else if (currentUser.isFriend(user)) {
-//                userMessages.push_back(singleMessage);
-//            }
-//            else if (singleMessage.find("#") != std::string::npos) {
-//                stringstream hashStream(hashes);
-//                string hashtag;
-//                for (; hashStream >> hashtag; ) {
-//                    if (singleMessage.find(hashtag) != std::string::npos) {
-//                        userMessages.push_back(singleMessage);
-//                        break;
-//                    }
-//                }
-//            }
-//            bufferCopy = bufferCopy.substr(messageEnd, std::string::npos);
-//        }
-//
-//    }
 
     int numDisplayed = 0; //current number of messages printed
     //iterate backwards of the messages relevant to the User and print them out
@@ -244,8 +212,6 @@ void Menu::addFriends() {
     validUser = true;
     }
     currentUser.addFriend(candidateFriend);
-//    userList.erase(currentUser.getUsername());
-//    userList.insert(currentUser);
     cout << string(100, '=') << endl;
 }
 
@@ -302,7 +268,6 @@ void Menu::followHash() {
         }
         //Checks that hashtag contains only letters
         string hashString = newHash.substr(1, std::string::npos);
-        //for (char c : hashString) {
         for (int i = 0; i < hashString.size(); i++) {
             char c = hashString[i];
             if (!((c <= 'z' && c >= 'a') || (c <= 'Z' && c >= 'A'))) {

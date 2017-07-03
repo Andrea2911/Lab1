@@ -1,0 +1,601 @@
+/** Sample execution and testing of Lab 1: War Eagle Chat System
+  * Name: Andrea Walker (aew0056@auburn.edu)
+  * File: SampleOutput.txt
+
+Sample execution of War Eagle Chat System:
+
+Script started on Sun 02 Jul 2017 04:49:31 PM CDT
+bash-4.2$ g++ aew0056_1.cpp Menu.cpp User.cpp HomePage.cpp WallPage.cpp -o ChatSystem.out
+bash-4.2$ ./ChatSystem.out 
+          =========================================================== 
+          |             Welcome to War Eagle Chat System!            |
+          =========================================================== 
+Create new user(n), Post (p), Wall page (w), Home page (h), Add friend (f), Follow hashtag (t), Change
+user (c), Quit (q) 
+Enter option: n
+
+Please enter user name: Paul
+
+          =============================================================
+          |          Welcome to War Eagle Chat System, Paul!          |
+          =============================================================
+
+Create new user(n), Post (p), Wall page (w), Home page (h), Add friend (f), Follow hashtag (t), Change
+user (c), Quit (q) 
+Enter option: p
+
+Enter message:
+Hello there, everyone!
+Welcome to our new chat group #newgroup.
+Feel free to post messages any time.
+#$
+
+====================================================================================================
+Create new user(n), Post (p), Wall page (w), Home page (h), Add friend (f), Follow hashtag (t), Change
+user (c), Quit (q) 
+Enter option: p
+
+Enter message:
+Our Bahamas cruise was super #endlessvacation.
+Great food and fun in the gulf.
+#$
+
+====================================================================================================
+Create new user(n), Post (p), Wall page (w), Home page (h), Add friend (f), Follow hashtag (t), Change
+user (c), Quit (q) 
+Enter option: n
+
+Please enter user name: Mary
+
+          =============================================================
+          |          Welcome to War Eagle Chat System, Mary!          |
+          =============================================================
+
+Create new user(n), Post (p), Wall page (w), Home page (h), Add friend (f), Follow hashtag (t), Change
+user (c), Quit (q) 
+Enter option: p
+
+Enter message:
+Welcome to my new msg page!
+I'm new to this, so no flame please.
+#$
+
+====================================================================================================
+Create new user(n), Post (p), Wall page (w), Home page (h), Add friend (f), Follow hashtag (t), Change
+user (c), Quit (q) 
+Enter option: p
+
+Enter message:
+We did the Pinhoti trail last year.
+That was exhausting!
+#$
+
+====================================================================================================
+Create new user(n), Post (p), Wall page (w), Home page (h), Add friend (f), Follow hashtag (t), Change
+user (c), Quit (q) 
+Enter option: p
+
+Enter message:
+Hiking the Rockies in 5 days!
+Can't wait to head for the mountains #endlessvacation.
+#$
+
+====================================================================================================
+Create new user(n), Post (p), Wall page (w), Home page (h), Add friend (f), Follow hashtag (t), Change
+user (c), Quit (q) 
+Enter option: w
+
+          ======================================
+          |          Mary's Wall Page          |
+          ======================================
+
+Hiking the Rockies in 5 days!
+Can't wait to head for the mountains #endlessvacation.
+
+We did the Pinhoti trail last year.
+That was exhausting!
+
+                       More messages? (yes/no): yes
+Welcome to my new msg page!
+I'm new to this, so no flame please.
+
+====================================================================================================
+Create new user(n), Post (p), Wall page (w), Home page (h), Add friend (f), Follow hashtag (t), Change
+user (c), Quit (q) 
+Enter option: n
+
+Please enter user name: Peter
+
+          ==============================================================
+          |          Welcome to War Eagle Chat System, Peter!          |
+          ==============================================================
+
+Create new user(n), Post (p), Wall page (w), Home page (h), Add friend (f), Follow hashtag (t), Change
+user (c), Quit (q) 
+Enter option: p
+
+Enter message:
+Summer was cool.
+Still trying to adjust to the semester drill.
+#$
+
+====================================================================================================
+Create new user(n), Post (p), Wall page (w), Home page (h), Add friend (f), Follow hashtag (t), Change
+user (c), Quit (q) 
+Enter option: f
+
+Enter friend's name: Paul
+
+====================================================================================================
+Create new user(n), Post (p), Wall page (w), Home page (h), Add friend (f), Follow hashtag (t), Change
+user (c), Quit (q) 
+Enter option: p
+
+Enter message:
+We had a great time at the beach #endlessvacation!
+Not to mention scuba diving and sailing.
+#$
+
+====================================================================================================
+Create new user(n), Post (p), Wall page (w), Home page (h), Add friend (f), Follow hashtag (t), Change
+user (c), Quit (q) 
+Enter option: h
+
+          =======================================
+          |          Peter's Home Page          |
+          =======================================
+
+Peter >
+We had a great time at the beach #endlessvacation!
+Not to mention scuba diving and sailing.
+
+Peter >
+Summer was cool.
+Still trying to adjust to the semester drill.
+
+                       More messages? (yes/no): yes
+Paul >
+Our Bahamas cruise was super #endlessvacation.
+Great food and fun in the gulf.
+
+Paul >
+Hello there, everyone!
+Welcome to our new chat group #newgroup.
+Feel free to post messages any time.
+
+====================================================================================================
+Create new user(n), Post (p), Wall page (w), Home page (h), Add friend (f), Follow hashtag (t), Change
+user (c), Quit (q) 
+Enter option: c
+
+Enter user's name: Paul
+
+          ==================================================================
+          |          Welcome back to War Eagle Chat System, Paul!          |
+          ==================================================================
+
+Create new user(n), Post (p), Wall page (w), Home page (h), Add friend (f), Follow hashtag (t), Change
+user (c), Quit (q) 
+Enter option: f
+
+Enter friend's name: Peter
+
+====================================================================================================
+Create new user(n), Post (p), Wall page (w), Home page (h), Add friend (f), Follow hashtag (t), Change
+user (c), Quit (q) 
+Enter option: p
+
+Enter message:
+Best cruise ever!
+Hit some rough seas though.
+#$
+
+====================================================================================================
+Create new user(n), Post (p), Wall page (w), Home page (h), Add friend (f), Follow hashtag (t), Change
+user (c), Quit (q) 
+Enter option: t
+
+Enter hashtag topic: #endlessvacation
+
+====================================================================================================
+Create new user(n), Post (p), Wall page (w), Home page (h), Add friend (f), Follow hashtag (t), Change
+user (c), Quit (q) 
+Enter option: h
+
+          ======================================
+          |          Paul's Home Page          |
+          ======================================
+
+Paul >
+Best cruise ever!
+Hit some rough seas though.
+
+Peter >
+We had a great time at the beach #endlessvacation!
+Not to mention scuba diving and sailing.
+
+                       More messages? (yes/no): yes
+Peter >
+Summer was cool.
+Still trying to adjust to the semester drill.
+
+Mary >
+Hiking the Rockies in 5 days!
+Can't wait to head for the mountains #endlessvacation.
+
+Paul >
+Our Bahamas cruise was super #endlessvacation.
+Great food and fun in the gulf.
+
+Paul >
+Hello there, everyone!
+Welcome to our new chat group #newgroup.
+Feel free to post messages any time.
+
+====================================================================================================
+Create new user(n), Post (p), Wall page (w), Home page (h), Add friend (f), Follow hashtag (t), Change
+user (c), Quit (q) 
+Enter option: c
+
+Enter user's name: Mary
+
+          ==================================================================
+          |          Welcome back to War Eagle Chat System, Mary!          |
+          ==================================================================
+
+Create new user(n), Post (p), Wall page (w), Home page (h), Add friend (f), Follow hashtag (t), Change
+user (c), Quit (q) 
+Enter option: t
+
+Enter hashtag topic: #newgroup
+
+====================================================================================================
+Create new user(n), Post (p), Wall page (w), Home page (h), Add friend (f), Follow hashtag (t), Change
+user (c), Quit (q) 
+Enter option: h
+
+          ======================================
+          |          Mary's Home Page          |
+          ======================================
+
+Mary >
+Hiking the Rockies in 5 days!
+Can't wait to head for the mountains #endlessvacation.
+
+Mary >
+We did the Pinhoti trail last year.
+That was exhausting!
+
+                       More messages? (yes/no): yes
+Mary >
+Welcome to my new msg page!
+I'm new to this, so no flame please.
+
+Paul >
+Hello there, everyone!
+Welcome to our new chat group #newgroup.
+Feel free to post messages any time.
+
+====================================================================================================
+Create new user(n), Post (p), Wall page (w), Home page (h), Add friend (f), Follow hashtag (t), Change
+user (c), Quit (q) 
+Enter option: q
+
+          ===========================================================
+          |         Thank you for using War Eagle Chat System        |
+          ===========================================================
+bash-4.2$ exit
+
+Script done on Sun 02 Jul 2017 04:55:13 PM CDT
+
+
+System Tests:
+1)The user selects ‘n’ to create a new user, and the system checks to see if there is alreadya user with that username. If the username is already taken, the user is prompted to choose a different username. Otherwise, a new user is successfully created and welcome to the Wareagle Chat System.
+
+          =========================================================== 
+          |             Welcome to War Eagle Chat System!            |
+          =========================================================== 
+Create new user(n), Post (p), Wall page (w), Home page (h), Add friend (f), Follow hashtag (t), Change
+user (c), Quit (q) 
+Enter option: n
+
+Please enter user name: Andrea
+
+          ===============================================================
+          |          Welcome to War Eagle Chat System, Andrea!          |
+          ===============================================================
+
+Create new user(n), Post (p), Wall page (w), Home page (h), Add friend (f), Follow hashtag (t), Change
+user (c), Quit (q) 
+Enter option: n
+
+Please enter user name: Andrea
+
+Username Andrea is already taken. Choose a different username.
+
+Please enter user name: Elizabeth
+
+          ==================================================================
+          |          Welcome to War Eagle Chat System, Elizabeth!          |
+          ==================================================================
+
+Create new user(n), Post (p), Wall page (w), Home page (h), Add friend (f), Follow hashtag (t), Change
+user (c), Quit (q) 
+Enter option: The user selects ‘n’ to create a new user, and the system checks to see if there is already
+a user with that username. If the username is already taken, the user is prompted to choose a different username. Otherwise, a new user is successfully created and welcome to the Wareagle Chat System.
+Invalid input! Try again.
+
+Create new user(n), Post (p), Wall page (w), Home page (h), Add friend (f), Follow hashtag (t), Change
+user (c), Quit (q) 
+Enter option: 
+
+
+2)The current user selects ‘p’ to post a new message. The user should be able to type in a message of multiple lines, and the message should end with “#$”. The test fails otherwise.
+
+Create new user(n), Post (p), Wall page (w), Home page (h), Add friend (f), Follow hashtag (t), Change
+user (c), Quit (q) 
+Enter option: p
+
+Invalid input! Try again.
+
+Create new user(n), Post (p), Wall page (w), Home page (h), Add friend (f), Follow hashtag (t), Change
+user (c), Quit (q) 
+Enter option: p
+
+Enter message:
+This is the first line of a message.
+This is the second line of a message.
+#$
+
+====================================================================================================
+Create new user(n), Post (p), Wall page (w), Home page (h), Add friend (f), Follow hashtag (t), Change
+user (c), Quit (q) 
+Enter option: p
+
+Enter message:
+Here is a second message.
+And a hashtag topic #hashtag.
+#$
+
+====================================================================================================
+Create new user(n), Post (p), Wall page (w), Home page (h), Add friend (f), Follow hashtag (t), Change
+user (c), Quit (q) 
+Enter option: p
+
+Enter message:
+This third message is only one line long.
+#$
+
+====================================================================================================
+Create new user(n), Post (p), Wall page (w), Home page (h), Add friend (f), Follow hashtag (t), Change
+user (c), Quit (q) 
+Enter option: 
+
+3)The current user selects ‘w’ to display the wall page. The user’s first two messages should be displayed, as well as a prompt asking if the user wants to display more messages.
+
+Create new user(n), Post (p), Wall page (w), Home page (h), Add friend (f), Follow hashtag (t), Change
+user (c), Quit (q) 
+Enter option: w
+
+          ===========================================
+          |          Elizabeth's Wall Page          |
+          ===========================================
+
+This third message is only one line long.
+
+Here is a second message.
+And a hashtag topic #hashtag.
+
+                       More messages? (yes/no): no
+====================================================================================================
+Create new user(n), Post (p), Wall page (w), Home page (h), Add friend (f), Follow hashtag (t), Change
+user (c), Quit (q) 
+Enter option: w
+
+          ===========================================
+          |          Elizabeth's Wall Page          |
+          ===========================================
+
+This third message is only one line long.
+
+Here is a second message.
+And a hashtag topic #hashtag.
+
+                       More messages? (yes/no): yes
+This is the first line of a message.
+This is the second line of a message.
+
+====================================================================================================
+Create new user(n), Post (p), Wall page (w), Home page (h), Add friend (f), Follow hashtag (t), Change
+user (c), Quit (q) 
+Enter option: 
+
+5)Add a friend-a user can add a new friend. The current user selects ‘f’ to add a new friend by their username. If the username has not been created yet, the user is prompted to try a different username. Otherwise, the friend is added to the current user’s friend list.
+
+Create new user(n), Post (p), Wall page (w), Home page (h), Add friend (f), Follow hashtag (t), Change
+user (c), Quit (q) 
+Enter option: n
+
+Please enter user name: Allison
+
+          ================================================================
+          |          Welcome to War Eagle Chat System, Allison!          |
+          ================================================================
+
+Create new user(n), Post (p), Wall page (w), Home page (h), Add friend (f), Follow hashtag (t), Change
+user (c), Quit (q) 
+Enter option: p
+
+Enter message:
+This is my first message.
+Excited to be part of the groupt.
+#$
+
+====================================================================================================
+Create new user(n), Post (p), Wall page (w), Home page (h), Add friend (f), Follow hashtag (t), Change
+user (c), Quit (q) 
+Enter option: f
+
+Enter friend's name: Laura
+
+Laura is not a valid user.
+
+Enter friend's name: Elizabeth
+
+====================================================================================================
+Create new user(n), Post (p), Wall page (w), Home page (h), Add friend (f), Follow hashtag (t), Change
+user (c), Quit (q) 
+Enter option: 
+
+6) The current user selects ‘c’ to switch users. If the candidate user has not been created the user is prompted to try a different username. Otherwise the candidate user becomes the current user, and is welcomed back to the Wareagle Chat System.
+
+Create new user(n), Post (p), Wall page (w), Home page (h), Add friend (f), Follow hashtag (t), Change
+user (c), Quit (q) 
+Enter option: c
+
+Enter user's name: Laura
+
+Laura has not been created, and is not a valid user.
+
+Enter user's name: Elizabeth
+
+          =======================================================================
+          |          Welcome back to War Eagle Chat System, Elizabeth!          |
+          =======================================================================
+
+Create new user(n), Post (p), Wall page (w), Home page (h), Add friend (f), Follow hashtag (t), Change
+user (c), Quit (q) 
+Enter option: 
+
+
+7) The user selects ‘t’ to follow a new hashtag. If the hashtag contains anything other than letters, the user is prompted to try again. 
+If the hashtag does not exist yet, a new hashtag topic is created.
+
+Create new user(n), Post (p), Wall page (w), Home page (h), Add friend (f), Follow hashtag (t), Change
+user (c), Quit (q) 
+Enter option: c
+
+Enter user's name: Allison
+
+          =====================================================================
+          |          Welcome back to War Eagle Chat System, Allison!          |
+          =====================================================================
+
+====================================================================================================
+Create new user(n), Post (p), Wall page (w), Home page (h), Add friend (f), Follow hashtag (t), Change
+user (c), Quit (q) 
+Enter option: t
+
+Enter hashtag topic: #hashtag1
+
+Hashtag topics can only contain letters
+
+Enter hashtag topic: hashtag
+
+Hashtag topics must begin with '#'
+
+Enter hashtag topic: #hashtag
+
+====================================================================================================
+
+8) The user selects ‘q’ to quit the program, which should exit gracefully.
+
+Create new user(n), Post (p), Wall page (w), Home page (h), Add friend (f), Follow hashtag (t), Change
+user (c), Quit (q) 
+Enter option: q
+
+          ===========================================================
+          |         Thank you for using War Eagle Chat System        |
+          ===========================================================
+
+9) If any option other than the ones listed in Test Cases 1-8, the user should be promptedthat they have made an invalid choice and be prompted to try again.Create new user(n), Post (p), Wall page (w), Home page (h), Add friend (f), Follow hashtag (t), Change
+user (c), Quit (q) 
+Enter option: z
+
+Invalid input! Try again.
+
+Create new user(n), Post (p), Wall page (w), Home page (h), Add friend (f), Follow hashtag (t), Change
+user (c), Quit (q) 
+Enter option: abc
+
+Invalid input! Try again.
+
+Create new user(n), Post (p), Wall page (w), Home page (h), Add friend (f), Follow hashtag (t), Change
+user (c), Quit (q) 
+Enter option: d d
+
+Invalid input! Try again.
+
+Create new user(n), Post (p), Wall page (w), Home page (h), Add friend (f), Follow hashtag (t), Change
+user (c), Quit (q) 
+Enter option: 
+4)The current user selects ‘h’ to display his home page. The latest two messages of the user, the user’s friends, or hashtag topics the user follows should be displayed, as well as a prompt asking if the user wants to display more messages from any of those categories.
+
+**In this test case, the current user is Allison, Allison is friends with Elizabeth, and Allison follows #hashtag.====================================================================================================
+Create new user(n), Post (p), Wall page (w), Home page (h), Add friend (f), Follow hashtag (t), Change
+user (c), Quit (q) 
+Enter option: h       
+
+          =========================================
+          |          Allison's Home Page          |
+          =========================================
+
+Allison >
+This is my first message.
+Excited to be part of the groupt.
+
+Andrea >
+This is Andrea's first message.
+#hashtag
+
+                       More messages? (yes/no): no
+====================================================================================================
+Create new user(n), Post (p), Wall page (w), Home page (h), Add friend (f), Follow hashtag (t), Change
+user (c), Quit (q) 
+Enter option: h
+
+          =========================================
+          |          Allison's Home Page          |
+          =========================================
+
+Allison >
+This is my first message.
+Excited to be part of the groupt.
+
+Andrea >
+This is Andrea's first message.
+#hashtag
+
+                       More messages? (yes/no): yes
+Elizabeth >
+This third message is only one line long.
+
+Elizabeth >
+Here is a second message.
+And a hashtag topic #hashtag.
+
+Elizabeth >
+This is the first line of a message.
+This is the second line of a message.
+
+====================================================================================================
+Create new user(n), Post (p), Wall page (w), Home page (h), Add friend (f), Follow hashtag (t), Change
+user (c), Quit (q) 
+Enter option:     
+
+
+Example of testing the methods of the User class using the driver program UserTests.cpp and the assert macro.
+aew0056@tux064:~/Lab1$ g++ UserTests.cpp User.cpp -o Testing.out
+aew0056@tux064:~/Lab1$ ./Testing.out 
+Enter a username for a User object: Andrea
+
+User Andrea successfully created.
+Enter a second username for a User object: Elizabeth
+
+The first user is not a friend of the second user
+The second user is added as a friend of the first user
+The second user is now a friend of the first user.
+Enter a hashtag for the first user to 'follow': #hashtag
+The hashtag #hashtag was successfully followed
+The User object has been successfully tested, do you want to test again? (y/n): n
+

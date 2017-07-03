@@ -1,8 +1,15 @@
+// Lab 1:       War Eagle Chat System
+// File:        UserTests.cpp
+// Description: Driver program to test the User object.
+
+
 #include "User.h"
 #include <iostream>
 #include <cassert>
 using namespace std;
 
+//Tests all of the methods of a User object using user input and assert statements.
+//Due to the nature of the assert macro if a test fails the program will end.
 int main() {
     char ans;
     do {
